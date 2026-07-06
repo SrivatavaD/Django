@@ -17,10 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app1 import views
+from app1.views import learn_django
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home, name='home'),
-    path('myfun/',views.myfunction,name='myfunction')
-    
+    path('myfun/',views.myfunction,name='myfunction'),
+    path('dj/',learn_django),
+    path('py/',learn_django,{'Status':'ok'}),
+
 ]
