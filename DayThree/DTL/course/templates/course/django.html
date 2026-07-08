@@ -11,5 +11,10 @@
      <h2>Name: {{ name }}</h2>
      <h3>Duration: {{ duration }}</h3>
      <h3>Seats: {{ Seats }}</h3>
+
+     <h2>Filters</h2>
+     <h3>Name: {{name|upper}}</h3>
+     <h3>desc: {{desc|truncatewords:5}}</h3>
+     <h4>Desc: {{desc|upper|truncatewords:3}}</h4>
 </body>
 </html>
